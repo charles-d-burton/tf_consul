@@ -31,7 +31,7 @@ data "aws_iam_policy_document" "consul_instance_policy" {
     ]
 
     resources = [
-      "${aws_s3_bucket.gaia-tf-consul-backups.arn}",
+      "${aws_s3_bucket.tf-consul-backups.arn}",
     ]
   }
 
@@ -45,7 +45,7 @@ data "aws_iam_policy_document" "consul_instance_policy" {
     ]
 
     resources = [
-      "${aws_s3_bucket.gaia-tf-consul-backups.arn}/*",
+      "${aws_s3_bucket.tf-consul-backups.arn}/*",
     ]
   }
 
