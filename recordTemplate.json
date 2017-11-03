@@ -1,0 +1,19 @@
+{
+  "Comment": "Update record for consul server",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "server.consul-us-west-2.gaia.aws",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "10.1.1.235"
+          }
+        ]
+      }
+    }
+  ]
+}
+
