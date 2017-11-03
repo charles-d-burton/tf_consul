@@ -34,7 +34,6 @@ variable "private_subnets" {
 variable "key_name" {}
 
 variable "region" {
-  default     = ""
   description = "The region of AWS, for AMI lookups."
 }
 
