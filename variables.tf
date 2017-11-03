@@ -21,13 +21,13 @@ variable "ami" {
 
 variable "availability_zones" {
   /*default     = "us-west-2a,us-west-2b,us-west-2c"*/
-  default     = []
+  type        = "list"
   description = "List of availability zones, use AWS CLI to find your "
 }
 
 variable "private_subnets" {
   /*default = "subnet-b0d839f9,subnet-7698cd2e,subnet-b411ded3"*/
-  default     = []
+  type        = "list"
   description = "List of subnets to launch instances into"
 }
 
