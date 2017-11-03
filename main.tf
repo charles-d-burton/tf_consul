@@ -53,8 +53,8 @@ resource "aws_iam_policy_attachment" "consul" {
 }
 
 resource "aws_iam_instance_profile" "consul_instance_profile" {
-  name  = "consul-instance-profile-${var.region}"
-  roles = ["${aws_iam_role.consul.name}"]
+  name = "consul-instance-profile-${var.region}"
+  role = "${aws_iam_role.consul.name}"
 }
 
 #Generate a radom base64 encoded id for the gossip protocol encryption
