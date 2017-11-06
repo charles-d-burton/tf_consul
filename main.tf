@@ -24,7 +24,7 @@ resource "aws_s3_bucket" "tf-consul-backups" {
   }
 
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = "${var.prevent_destroy}"
   }
 
   tags {
