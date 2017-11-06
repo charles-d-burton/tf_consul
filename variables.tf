@@ -63,8 +63,3 @@ variable "vpc_id" {
 variable "env" {}
 
 variable "notification_arn" {}
-
-variable "prevent_destroy" {
-  description = "set to true to prevent accidental destruction"
-  default     = false
-}
